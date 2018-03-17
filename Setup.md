@@ -1,5 +1,5 @@
-#ESP8266 Envirnment Setup Procedure
-##pre-reqs
+# ESP8266 Envirnment Setup Procedure
+## pre-reqs
 
 Ubuntu14.04:
 ```
@@ -13,7 +13,7 @@ Later Debian/Ubuntu versions may require:
 sudo apt-get install libtool-bin
 
 ```
-##building
+## building
 
 ```
 cd /opt
@@ -21,14 +21,14 @@ sudo git clone --recursive https://github.com/pfalcon/esp-open-sdk.git
 cd /opt/esp-open-sdk
 make
 ```
-##Compile
+## Compile
 ```
 export PATH=$PATH:/opt/esp-open-sdk/xtensa-lx106-elf/bin/
 cd /opt/esp-open-sdk/examples/blinky
 make
 ```
 
-##Flash
+## Flash
 ```
 sudo chown jinhao /dev/ttyUSB0
 make flash
